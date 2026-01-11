@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thenurseboy - Clean Today, Better Tomorrow 🌱</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1B5E20',
+                        'secondary': '#4CAF50',
+                        'accent': '#81C784',
+                        'eco-white': '#F1F8E9',
+                        'charcoal': '#263238',
+                        'hope-yellow': '#FFEB3B'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                        'playfair': ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-eco-white text-charcoal">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl font-poppins font-bold text-primary">
+                        <i class="fas fa-leaf mr-2"></i>Thenurseboy
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-charcoal hover:text-primary transition-colors">Home</a>
+                        <a href="#about" class="text-charcoal hover:text-primary transition-colors">About</a>
+                        <a href="#events" class="text-charcoal hover:text-primary transition-colors">Events</a>
+                        <a href="#impact" class="text-charcoal hover:text-primary transition-colors">Impact</a>
+                        <a href="#volunteer" class="text-charcoal hover:text-primary transition-colors">Join Us</a>
+                        <a href="#contact" class="text-charcoal hover:text-primary transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-charcoal hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-16 min-h-screen bg-gradient-to-br from-eco-white via-white to-accent/10 flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-5xl lg:text-6xl font-poppins font-bold text-charcoal leading-tight">
+                            Clean Today,<br>
+                            <span class="text-primary">Better Tomorrow</span>
+                        </h1>
+                        <p class="text-xl text-charcoal/80 font-playfair italic">
+                            "If we unite, we can create a beautiful tomorrow."
+                        </p>
+                        <p class="text-lg text-charcoal/70 max-w-lg">
+                            Join the civic-driven movement that's transforming India one clean drive at a time. 
+                            Together, we're building a pollution-free and beautiful nation.
+                        </p>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg">
+                            <i class="fas fa-calendar-plus mr-2"></i>Join Next Event
+                        </button>
+                        <button class="bg-white hover:bg-secondary text-primary hover:text-white border-2 border-primary px-8 py-4 rounded-full font-semibold transition-all">
+                            <i class="fas fa-hands-helping mr-2"></i>Become a Volunteer
+                        </button>
+                    </div>
+
+                    <!-- Impact Stats -->
+                    <div class="grid grid-cols-3 gap-6 pt-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">50+</div>
+                            <div class="text-sm text-charcoal/70">Cities Covered</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">1000+</div>
+                            <div class="text-sm text-charcoal/70">Volunteers</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">200+</div>
+                            <div class="text-sm text-charcoal/70">Events</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image/Video -->
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-secondary to-accent rounded-3xl p-8 shadow-2xl">
+                        <div class="aspect-video bg-white rounded-2xl flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-play-circle text-6xl text-primary mb-4"></i>
+                                <p class="text-charcoal font-semibold">Watch Our Mission Video</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Floating elements -->
+                    <div class="absolute -top-4 -right-4 bg-hope-yellow rounded-full p-4 shadow-lg animate-bounce">
+                        <i class="fas fa-leaf text-2xl text-primary"></i>
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-white rounded-full p-4 shadow-lg">
+                        <i class="fas fa-heart text-2xl text-secondary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-poppins font-bold text-charcoal mb-4">About Thenurseboy</h2>
+                <p class="text-xl text-charcoal/70 max-w-3xl mx-auto">
+                    From individual action to national movement - discover the journey of passion, 
+                    responsibility, and unity that's inspiring thousands across India.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <div class="bg-eco-white rounded-2xl p-8">
+                        <h3 class="text-2xl font-poppins font-semibold text-primary mb-4">Our Story</h3>
+                        <p class="text-charcoal/80 leading-relaxed">
+                            What started as one person's commitment to clean public spaces has evolved into 
+                            a nationwide movement. Thenurseboy represents the power of individual action 
+                            inspiring collective change.
+                        </p>
+                    </div>
+
+                    <!-- Values Cards -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gradient-to-br from-secondary/10 to-accent/10 rounded-xl p-6 text-center">
+                            <i class="fas fa-users text-3xl text-primary mb-3"></i>
+                            <h4 class="font-semibold text-charcoal">Unity</h4>
+                        </div>
+                        <div class="bg-gradient-to-br from-secondary/10 to-accent/10 rounded-xl p-6 text-center">
+                            <i class="fas fa-hand-holding-heart text-3xl text-primary mb-3"></i>
+                            <h4 class="font-semibold text-charcoal">Responsibility</h4>
+                        </div>
+                        <div class="bg-gradient-to-br from-secondary/10 to-accent/10 rounded-xl p-6 text-center">
+                            <i class="fas fa-lightbulb text-3xl text-primary mb-3"></i>
+                            <h4 class="font-semibold text-charcoal">Civic Sense</h4>
+                        </div>
+                        <div class="bg-gradient-to-br from-secondary/10 to-accent/10 rounded-xl p-6 text-center">
+                            <i class="fas fa-recycle text-3xl text-primary mb-3"></i>
+                            <h4 class="font-semibold text-charcoal">Sustainability</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-primary to-secondary rounded-3xl p-8 text-white">
+                        <blockquote class="text-2xl font-playfair italic mb-6">
+                            "One person can start a change, but together we can transform a nation."
+                        </blockquote>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-hope-yellow mr-3"></i>
+                                <span>Free cleanliness drives across India</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-hope-yellow mr-3"></i>
+                                <span>Community-driven environmental action</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-hope-yellow mr-3"></i>
+                                <span>Youth empowerment and civic education</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-eco-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-poppins font-bold text-charcoal mb-4">Upcoming Events</h2>
+                <p class="text-xl text-charcoal/70">Join us in making a difference in your city</p>
+            </div>
+
+            <!-- Event Cards -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="bg-gradient-to-r from-primary to-secondary h-48 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-map-marker-alt text-4xl mb-2"></i>
+                            <p class="text-lg font-semibold">Mumbai</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-charcoal mb-2">Marine Drive Cleanup</h3>
+                        <div class="space-y-2 text-charcoal/70 mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar mr-2"></i>
+                                <span>December 15, 2024</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-clock mr-2"></i>
+                                <span>6:00 AM - 10:00 AM</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-semibold transition-colors">
+                            Join This Event
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="bg-gradient-to-r from-secondary to-accent h-48 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-map-marker-alt text-4xl mb-2"></i>
+                            <p class="text-lg font-semibold">Delhi</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-charcoal mb-2">India Gate Area Drive</h3>
+                        <div class="space-y-2 text-charcoal/70 mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar mr-2"></i>
+                                <span>December 22, 2024</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-clock mr-2"></i>
+                                <span>7:00 AM - 11:00 AM</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-semibold transition-colors">
+                            Join This Event
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="bg-gradient-to-r from-accent to-secondary h-48 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <i class="fas fa-map-marker-alt text-4xl mb-2"></i>
+                            <p class="text-lg font-semibold">Bangalore</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-charcoal mb-2">Cubbon Park Initiative</h3>
+                        <div class="space-y-2 text-charcoal/70 mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar mr-2"></i>
+                                <span>December 29, 2024</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-clock mr-2"></i>
+                                <span>6:30 AM - 10:30 AM</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-semibold transition-colors">
+                            Join This Event
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Scheduler CTA -->
+            <div class="bg-gradient-to-r from-primary to-secondary rounded-3xl p-8 text-center text-white">
+                <h3 class="text-3xl font-poppins font-bold mb-4">Interactive Event Scheduler</h3>
+                <p class="text-xl mb-6">Explore events on our interactive map and find cleanup drives near you</p>
+                <button class="bg-white text-primary hover:bg-hope-yellow hover:text-charcoal px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105">
+                    <i class="fas fa-map mr-2"></i>View Event Map
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-poppins font-bold text-charcoal mb-4">Our Impact</h2>
+                <p class="text-xl text-charcoal/70">Real change, measurable results</p>
+            </div>
+
+            <!-- Impact Stats -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="text-center bg-eco-white rounded-2xl p-8">
+                    <div class="text-5xl font-bold text-primary mb-2">50+</div>
+                    <div class="text-charcoal/70 font-semibold">Cities Covered</div>
+                    <i class="fas fa-city text-3xl text-secondary mt-4"></i>
+                </div>
+                <div class="text-center bg-eco-white rounded-2xl p-8">
+                    <div class="text-5xl font-bold text-primary mb-2">200+</div>
+                    <div class="text-charcoal/70 font-semibold">Events Conducted</div>
+                    <i class="fas fa-calendar-check text-3xl text-secondary mt-4"></i>
+                </div>
+                <div class="text-center bg-eco-white rounded-2xl p-8">
+                    <div class="text-5xl font-bold text-primary mb-2">1000+</div>
+                    <div class="text-charcoal/70 font-semibold">Volunteers Joined</div>
+                    <i class="fas fa-users text-3xl text-secondary mt-4"></i>
+                </div>
+                <div class="text-center bg-eco-white rounded-2xl p-8">
+                    <div class="text-5xl font-bold text-primary mb-2">50T</div>
+                    <div class="text-charcoal/70 font-semibold">Waste Removed</div>
+                    <i class="fas fa-trash-alt text-3xl text-secondary mt-4"></i>
+                </div>
+            </div>
+
+            <!-- Before/After Gallery -->
+            <div class="bg-gradient-to-br from-eco-white to-white rounded-3xl p-8">
+                <h3 class="text-3xl font-poppins font-bold text-center text-charcoal mb-8">Before & After</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <h4 class="text-xl font-semibold text-charcoal">Before Cleanup</h4>
+                        <div class="bg-gray-300 rounded-xl h-64 flex items-center justify-center">
+                            <span class="text-gray-600">Before Image Placeholder</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="text-xl font-semibold text-charcoal">After Cleanup</h4>
+                        <div class="bg-gradient-to-br from-secondary/20 to-accent/20 rounded-xl h-64 flex items-center justify-center">
+                            <span class="text-primary font-semibold">After Image Placeholder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-poppins font-bold text-charcoal mb-4">What People Say</h2>
+                <p class="text-xl text-charcoal/70">Voices of support from our community</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-eco-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary rounded-full w-12 h-12 flex items-center justify-center text-white font-bold">
+                            R
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-charcoal">Rahul Sharma</h4>
+                            <p class="text-sm text-charcoal/60">Mumbai Volunteer</p>
+                        </div>
+                    </div>
+                    <p class="text-charcoal/80 italic mb-4">"Thenurseboy's dedication is truly inspiring. I've joined 5 cleanup drives and each one makes me believe we can really change India!"</p>
+                    <div class="flex text-hope-yellow">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-eco-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-secondary rounded-full w-12 h-12 flex items-center justify-center text-white font-bold">
+                            P
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-charcoal">Priya Patel</h4>
+                            <p class="text-sm text-charcoal/60">Delhi Student</p>
+                        </div>
+                    </div>
+                    <p class="text-charcoal/80 italic mb-4">"Amazing initiative! The way he organizes everything and brings people together is incredible. Proud to be part of this movement."</p>
+                    <div class="flex text-hope-yellow">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-eco-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-accent rounded-full w-12 h-12 flex items-center justify-center text-white font-bold">
+                            A
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-charcoal">Amit Kumar</h4>
+                            <p class="text-sm text-charcoal/60">Bangalore IT Professional</p>
+                        </div>
+                    </div>
+                    <p class="text-charcoal/80 italic mb-4">"Started as a weekend activity, now it's my passion. Thenurseboy showed us that small actions create big changes!"</p>
+                    <div class="flex text-hope-yellow">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-eco-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary rounded-full w-12 h-12 flex items-center justify-center text-white font-bold">
+                            S
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-charcoal">Sneha Reddy</h4>
+                            <p class="text-sm text-charcoal/60">Hyderabad Teacher</p>
+                        </div>
+                    </div>
+                    <p class="text-charcoal/80 italic mb-4">"My students and I joined the cleanup drive. It was educational and fun! Great way to teach civic responsibility."</p>
+                    <div class="flex text-hope-yellow">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="bg-eco-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-secondary rounded-full w-12 h-12 flex items-center justify-center text-white font-bold">
+                            V
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-charcoal">Vikash Singh</h4>
+                            <p class="text-sm text-charcoal/60">Pune Engineer</p>
+                        </div>
+                    </div>
+                    <p class="text-charcoal/80 italic mb-4">"The energy and positivity at these events is contagious. We're not just cleaning places, we're building a better society!"</p>
+                    <div class="flex text-hope-yellow">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="bg-eco-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-accent rounded-full w-12 h-12 flex items-center justify-center text-white font-bold">
+                            M
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-charcoal">Meera Joshi</h4>
+                            <p class="text-sm text-charcoal/60">Chennai Doctor</p>
+                        </div>
+                    </div>
+                    <p class="text-charcoal/80 italic mb-4">"As a healthcare professional, I understand the importance of cleanliness. This movement is exactly what India needs!"</p>
+                    <div class="flex text-hope-yellow">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Comment Section -->
+            <div class="mt-16 bg-gradient-to-r from-eco-white to-white rounded-3xl p-8">
+                <h3 class="text-2xl font-poppins font-bold text-center text-charcoal mb-8">Share Your Support</h3>
+                <div class="max-w-2xl mx-auto">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name" class="px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+                            <input type="text" placeholder="Your City" class="px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+                        </div>
+                        <textarea rows="4" placeholder="Share your thoughts about the movement..." class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none"></textarea>
+                        <div class="text-center">
+                            <button type="submit" class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-full font-semibold transition-colors">
+                                <i class="fas fa-heart mr-2"></i>Share Support
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Event Map Section -->
+    <section class="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-poppins font-bold text-charcoal mb-4">Next Event Location</h2>
+                <p class="text-xl text-charcoal/70">Join us at our upcoming cleanup drive</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Event Details -->
+                <div class="space-y-8">
+                    <div class="bg-white rounded-3xl p-8 shadow-lg">
+                        <div class="flex items-center mb-6">
+                            <div class="bg-primary rounded-full p-4 mr-4">
+                                <i class="fas fa-map-marker-alt text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-poppins font-bold text-charcoal">Marine Drive Cleanup</h3>
+                                <p class="text-charcoal/70">Mumbai, Maharashtra</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar text-primary mr-3"></i>
+                                <span class="text-charcoal">December 15, 2024 (Sunday)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-clock text-primary mr-3"></i>
+                                <span class="text-charcoal">6:00 AM - 10:00 AM</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-users text-primary mr-3"></i>
+                                <span class="text-charcoal">Expected 200+ volunteers</span>
+                            </div>
+                        </div>
+
+                        <!-- Countdown Timer -->
+                        <div class="mt-8 p-6 bg-gradient-to-r from-primary to-secondary rounded-2xl text-white text-center">
+                            <h4 class="text-lg font-semibold mb-4">Event Starts In</h4>
+                            <div class="grid grid-cols-4 gap-4">
+                                <div>
+                                    <div class="text-2xl font-bold" id="days">12</div>
+                                    <div class="text-sm opacity-80">Days</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold" id="hours">08</div>
+                                    <div class="text-sm opacity-80">Hours</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold" id="minutes">45</div>
+                                    <div class="text-sm opacity-80">Minutes</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold" id="seconds">30</div>
+                                    <div class="text-sm opacity-80">Seconds</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 flex flex-col sm:flex-row gap-4">
+                            <button class="flex-1 bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-semibold transition-colors">
+                                <i class="fas fa-user-plus mr-2"></i>Register Now
+                            </button>
+                            <button class="flex-1 bg-secondary hover:bg-secondary/90 text-white py-3 rounded-lg font-semibold transition-colors">
+                                <i class="fab fa-whatsapp mr-2"></i>Share Event
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Map -->
+                <div class="relative">
+                    <div class="bg-white rounded-3xl p-4 shadow-lg">
+                        <div id="map" class="h-96 rounded-2xl bg-gradient-to-br from-blue-100 to-green-100 relative overflow-hidden">
+                            <!-- Map Placeholder with Interactive Elements -->
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="text-center">
+                                    <div class="relative">
+                                        <!-- Animated Pin -->
+                                        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                            <div class="bg-primary rounded-full p-3 shadow-lg animate-bounce">
+                                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                                            </div>
+                                            <!-- Ripple Effect -->
+                                            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-primary/20 rounded-full animate-ping"></div>
+                                        </div>
+                                        
+                                        <!-- Map Background Pattern -->
+                                        <div class="w-80 h-64 bg-gradient-to-br from-blue-200 via-green-200 to-blue-300 rounded-xl opacity-50">
+                                            <!-- Grid Pattern -->
+                                            <div class="w-full h-full" style="background-image: linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px); background-size: 20px 20px;"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mt-4 bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-md">
+                                        <p class="text-sm font-semibold text-charcoal">📍 Marine Drive, Mumbai</p>
+                                        <p class="text-xs text-charcoal/70">Click to view in Google Maps</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Map Controls -->
+                            <div class="absolute top-4 right-4 space-y-2">
+                                <button class="bg-white hover:bg-gray-50 p-2 rounded-lg shadow-md transition-colors">
+                                    <i class="fas fa-plus text-charcoal"></i>
+                                </button>
+                                <button class="bg-white hover:bg-gray-50 p-2 rounded-lg shadow-md transition-colors">
+                                    <i class="fas fa-minus text-charcoal"></i>
+                                </button>
+                            </div>
+                            
+                            <!-- Directions Button -->
+                            <div class="absolute bottom-4 left-4">
+                                <button class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg font-semibold transition-colors shadow-lg">
+                                    <i class="fas fa-directions mr-2"></i>Get Directions
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Info Cards -->
+                    <div class="absolute -top-4 -left-4 bg-hope-yellow rounded-full p-3 shadow-lg">
+                        <i class="fas fa-route text-primary text-lg"></i>
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-white rounded-full p-3 shadow-lg">
+                        <i class="fas fa-compass text-secondary text-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="py-20 bg-gradient-to-br from-primary to-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-poppins font-bold mb-4">Join the Movement</h2>
+                <p class="text-xl opacity-90">Be the change you want to see in the world</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-6">
+                        <h3 class="text-3xl font-poppins font-semibold">Volunteer Roles</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                                <div class="flex items-center mb-3">
+                                    <i class="fas fa-hands-helping text-2xl text-hope-yellow mr-4"></i>
+                                    <h4 class="text-xl font-semibold">Ground Volunteer</h4>
+                                </div>
+                                <p class="opacity-90">Join cleanup drives and make direct impact on the ground</p>
+                            </div>
+                            
+                            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                                <div class="flex items-center mb-3">
+                                    <i class="fas fa-clipboard-list text-2xl text-hope-yellow mr-4"></i>
+                                    <h4 class="text-xl font-semibold">Event Coordinator</h4>
+                                </div>
+                                <p class="opacity-90">Help organize and manage cleanup events in your city</p>
+                            </div>
+                            
+                            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                                <div class="flex items-center mb-3">
+                                    <i class="fas fa-share-alt text-2xl text-hope-yellow mr-4"></i>
+                                    <h4 class="text-xl font-semibold">Social Media Supporter</h4>
+                                </div>
+                                <p class="opacity-90">Spread awareness and inspire others through digital platforms</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Registration Form -->
+                <div class="bg-white rounded-3xl p-8 text-charcoal">
+                    <h3 class="text-2xl font-poppins font-bold text-center mb-6">Register as Volunteer</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Full Name</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Phone</label>
+                            <input type="tel" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">City</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Preferred Role</label>
+                            <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+                                <option>Ground Volunteer</option>
+                                <option>Event Coordinator</option>
+                                <option>Social Media Supporter</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white py-4 rounded-lg font-semibold transition-colors">
+                            Join the Movement
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-eco-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-poppins font-bold text-charcoal mb-4">Get in Touch</h2>
+                <p class="text-xl text-charcoal/70">Let's work together for a cleaner India</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="bg-white rounded-2xl p-8">
+                        <h3 class="text-2xl font-poppins font-semibold text-charcoal mb-6">Connect With Us</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="bg-primary/10 rounded-full p-3 mr-4">
+                                    <i class="fas fa-envelope text-primary"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Email</div>
+                                    <div class="text-charcoal/70">contact@thenurseboy.org</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="bg-primary/10 rounded-full p-3 mr-4">
+                                    <i class="fab fa-youtube text-primary"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">YouTube Channel</div>
+                                    <div class="text-charcoal/70">@thenurseboy</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="bg-primary/10 rounded-full p-3 mr-4">
+                                    <i class="fab fa-instagram text-primary"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold">Instagram</div>
+                                    <div class="text-charcoal/70">@thenurseboy</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 text-white text-center">
+                        <h3 class="text-xl font-semibold mb-4">Follow Our Journey</h3>
+                        <div class="flex justify-center space-x-6">
+                            <a href="#" class="bg-white/20 hover:bg-white/30 rounded-full p-3 transition-colors">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-white/20 hover:bg-white/30 rounded-full p-3 transition-colors">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-white/20 hover:bg-white/30 rounded-full p-3 transition-colors">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-white/20 hover:bg-white/30 rounded-full p-3 transition-colors">
+                                <i class="fab fa-youtube text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white rounded-2xl p-8">
+                    <h3 class="text-2xl font-poppins font-semibold text-charcoal mb-6">Send Message</h3>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Name</label>
+                                <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Subject</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Message</label>
+                            <textarea rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:outline-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white py-4 rounded-lg font-semibold transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="text-2xl font-poppins font-bold mb-4">
+                        <i class="fas fa-leaf mr-2"></i>Thenurseboy
+                    </div>
+                    <p class="text-white/70 mb-4 max-w-md">
+                        A civic-driven movement transforming India through cleanliness drives, 
+                        community action, and environmental responsibility.
+                    </p>
+                    <div class="text-sm text-white/60">
+                        Project by: LakTech Innovations<br>
+                        Initiative: Clean Today, Better Tomorrow 🌱
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <div class="space-y-2 text-white/70">
+                        <a href="#about" class="block hover:text-white transition-colors">About</a>
+                        <a href="#events" class="block hover:text-white transition-colors">Events</a>
+                        <a href="#volunteer" class="block hover:text-white transition-colors">Volunteer</a>
+                        <a href="#contact" class="block hover:text-white transition-colors">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <div class="space-y-2 text-white/70">
+                        <a href="#" class="block hover:text-white transition-colors">Sponsor Event</a>
+                        <a href="#" class="block hover:text-white transition-colors">Partner with Us</a>
+                        <a href="#" class="block hover:text-white transition-colors">Media Kit</a>
+                        <a href="#" class="block hover:text-white transition-colors">Blog</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
+                <p>&copy; 2024 Thenurseboy. All rights reserved. Made with ❤️ for a cleaner India.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="fixed bottom-8 right-8 bg-primary hover:bg-primary/90 text-white p-4 rounded-full shadow-lg transition-all transform hover:scale-110 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const eventDate = new Date('2024-12-15T06:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+
+            if (distance < 0) {
+                document.getElementById('days').textContent = '00';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+            }
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+
+        // Map click handler
+        document.getElementById('map').addEventListener('click', () => {
+            window.open('https://maps.google.com/?q=Marine+Drive,+Mumbai', '_blank');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll to top button
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.remove('opacity-0', 'invisible');
+            } else {
+                scrollTopBtn.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Mobile menu toggle (basic implementation)
+        const mobileMenuBtn = document.querySelector('.md\\:hidden button');
+        mobileMenuBtn.addEventListener('click', () => {
+            // Add mobile menu functionality here
+            alert('Mobile menu - to be implemented');
+        });
+    </script>
+</body>
+</html>
